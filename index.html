@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiositycore</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_logo"><a href="#">curiositycore</a></div>
+            <ul class="nav_links">
+                <li class="link">Home</li>
+                <li class="link">About</li>
+                <li class="link">Projects</li>
+                <li class="link">Contact</li>
+            </ul>
+            <div class="menu_button">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </nav>
+        <div class="hero">
+            <h2>CURIOSITYCORE</h2>
+            <p>Welcome to curiositycore!</p>
+            <button>Get started!</button>
+        </div>
+    </header>
+
+    <script>
+        const menuButton = document.querySelector(".menu_button")
+        const menuButtonIcon = document.querySelector(".menu_button i")
+        const menu = document.querySelector(".nav_links")
+
+        menuButton.onclick = function() {
+            menu.classList.toggle("open")
+            const isOpen = menu.classList.contains("open")
+
+            menuButtonIcon.classList = isOpen ? "ri-close-line" : "ri-menu-3-line";
+        }
+    </script>
+</body>
+</html>
