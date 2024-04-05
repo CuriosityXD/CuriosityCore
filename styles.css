@@ -121,11 +121,6 @@ nav{
     transition-duration: 0.2s;
 }
 
-.hero img {
-    scale: 0.8;
-    float: right;
-}
-
 @media screen and (min-width: 640px) {
     .nav_links {
         width: 250px;
