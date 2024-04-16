@@ -13,37 +13,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav_logo"><a href="#">curiositycore</a></div>
-            <ul class="nav_links">
-                <li class="link">Home</li>
-                <li class="link">About</li>
-                <li class="link">Projects</li>
-                <li class="link">Contact</li>
-            </ul>
-            <div class="menu_button">
-                <i class="ri-menu-3-line"></i>
+    <div class="nav-container">
+        <div class="navbar">
+            <h1 id="navbar-logo">Curiositycore</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-        <div class="hero">
-            <h2>CURIOSITYCORE</h2>
-            <p>Welcome to curiositycore!</p>
-            <button>Get started!</button>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">About</a></li>
+                <li><a href="#" class="nav-links">Projects</a></li>
+                <li><a href="#" class="nav-links">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
 
-    <script>
-        const menuButton = document.querySelector(".menu_button")
-        const menuButtonIcon = document.querySelector(".menu_button i")
-        const menu = document.querySelector(".nav_links")
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Curiositycore</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="main-btn">Get Started!</button>
+            </div>
+            <div class="main-img-container">
+                <img src="images/main_pic.svg" alt="" id="main-img">
+            </div>
+        </div>
+    </div>
 
-        menuButton.onclick = function() {
-            menu.classList.toggle("open")
-            const isOpen = menu.classList.contains("open")
-
-            menuButtonIcon.classList = isOpen ? "ri-close-line" : "ri-menu-3-line";
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
