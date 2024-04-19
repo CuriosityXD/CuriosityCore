@@ -3,7 +3,7 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `
     <header class="header">
         <div class="header_content">
-            <a href="" class="logo">curiositycore</a>
+            <a href="index.html" class="logo">curiositycore</a>
     
             <div class="nav">
                 <ul class="nav_list">
