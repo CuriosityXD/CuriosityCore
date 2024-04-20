@@ -17,7 +17,7 @@ class MyHeader extends HTMLElement {
                         <a href="" class="nav_link">Projects</a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_btn">Contact</a>
+                        <a href="" class="nav_link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -41,38 +41,36 @@ class MyHeader extends HTMLElement {
     }
     
     body {
-        background-color: rgb(1, 4, 20);
+        background-color: rgb(0, 0, 0);
         font-family: "Montserrat", sans-serif;
         height: 3000px;
         padding-top: 60px;
     }
     
     .header {
-        background-color: rgba(1, 4, 20, 0.7);
+        background-color: rgba(0, 0, 0, 0);
         position: fixed;
         top: 0;
         width: 100%;
-        backdrop-filter: blur(6px);
     }
     
     .header_content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 30px;
-        min-height: 60px;
+        padding: 0 60px;
+        min-height: 120px;
     }
     
     .logo {
         font-size: 25px;
-        letter-spacing: -1.5px;
-        font-weight: 400;
+        font-weight: 500;
         color: #fff;
         transition: all 0.2s;
     }
     
     .logo:hover {
-        color: rgba(255, 255, 255, 0.65);
+        color: #9797a0;
     }
     
     .nav_list {
@@ -81,28 +79,14 @@ class MyHeader extends HTMLElement {
     }
     
     .nav_link {
-        color: rgba(255, 255, 255, 0.65);
-        font-weight: 400;
-        font-size: 15px;
+        color: #9797a0;
+        font-weight: 500;
+        font-size: 1rem;
         transition: all 0.2s;
     }
     
     .nav_link:hover {
-        color: rgb(255, 255, 255, 1);
-    }
-    
-    .nav_btn {
-        background-color: #0071e3;
         color: #fff;
-        padding: 7px 18px;
-        border-radius: 5000px;
-        font-size: 12px;
-        text-transform: uppercase;
-        transition: all 0.2s;
-    }
-    
-    .nav_btn:hover {
-        background-color: rgb(28, 128, 228);
     }
 
     @media (max-width: 850px) {
@@ -110,6 +94,7 @@ class MyHeader extends HTMLElement {
             flex-direction: column;
             padding: 15px 0;
             row-gap: 8px;
+            min-height: 60px;
         }
     
         .nav_list {

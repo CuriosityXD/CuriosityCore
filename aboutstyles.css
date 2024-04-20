@@ -8,16 +8,17 @@ body {
     background-color: rgb(1, 4, 20);
     font-family: "Montserrat", sans-serif;
     height: 3000px;
-    padding-top: 60px;
+    padding-top: 120px;
 }
 
 .main {
     margin-top: 80px;
-    text-align: center;
+    text-align: left;
+    margin-left: 60px;
 }
 
 .heading {
-    color: darkmagenta;
+    color: rgb(255, 255, 255);
     font-size: 70px;
     margin-bottom: 20px;
 }
@@ -25,13 +26,27 @@ body {
 .text {
     line-height: 1.6;
     font-size: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1500px;
     color: #fff;
 }
 
 @media (max-width: 850px) {
     .heading {
         font-size: 40px;
+    }
+
+    .text {
+        font-size: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .main {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    body {
+        padding-top: 60px;
     }
 }
