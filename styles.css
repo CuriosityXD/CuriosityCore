@@ -19,7 +19,7 @@
 body {
     background-color: rgb(1, 4, 20);
     font-family: "Montserrat", sans-serif;
-    min-height: 500px;
+    height: 3000px;
     padding-top: 120px;
 
     display: flex;
