@@ -52,6 +52,7 @@ class MyHeader extends HTMLElement {
         position: fixed;
         top: 0;
         width: 100%;
+        transition: all 0.2s;
     }
     
     .header_content {
@@ -89,16 +90,31 @@ class MyHeader extends HTMLElement {
         color: #fff;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 850px) {\
+        .header {
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(6px);
+        }
+
         .header_content {
             flex-direction: column;
             padding: 15px 0;
             row-gap: 8px;
             min-height: 60px;
         }
+
+        .logo {
+            align-self: start;
+            margin-left: 30px;
+        }
     
         .nav_list {
             column-gap: 20px;
+        }
+
+        .nav {
+            align-self: start;
+            margin-left: 30px;
         }
     }
     </style>
