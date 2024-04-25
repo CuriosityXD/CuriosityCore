@@ -116,4 +116,99 @@ class MyHeader extends HTMLElement {
     }
 }
 
+class MyFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="index.html" class="footer_link">Home</a>
+                </li>
+                <li class="footer-item">
+                    <a href="about.html" class="footer_link">About</a>
+                </li>
+                <li class="footer-item">
+                    <a href="index.html" class="footer_link">Projects</a>
+                </li>
+                <li class="footer-item">
+                    <a href="index.html" class="footer_link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="footer-images">
+                <img src="images/youtube.png" class="footer-img">
+                <img src="images/github.png" class="footer-img">
+                <img src="images/twitter.png" class="footer-img">
+            </div>
+        </div>
+    </footer>
+        
+    <style>
+    .footer {
+        margin-top: auto;
+        width: 100%;
+    }
+    
+    .footer-content {
+        display: flex;
+        padding: 0 60px;
+        margin-bottom: 30px;
+    }
+    
+    .footer-list {
+        display: flex;
+        column-gap: 40px;
+    }
+    
+    .footer_link {
+        color: #9797a0;
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.2s all;
+    }
+    
+    .footer_link:hover {
+        color: #fff;
+    }
+    
+    .footer-images {
+        margin-left: auto;
+        display: flex;
+        column-gap: 1.5rem;
+    }
+    
+    .footer-img {
+        align-self: start;
+        margin-left: 0;
+    }
+
+    @media (max-width: 850px) {
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+            margin-bottom: 30px;
+        }
+    
+        .footer-list {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .footer-images {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    </style>
+    `
+    console.log('created footer element')
+    }
+}
+
 customElements.define('my-header', MyHeader)
+customElements.define('my-footer', MyFooter)
