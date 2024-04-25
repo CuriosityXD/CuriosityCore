@@ -7,8 +7,11 @@
 body {
     background-color: rgb(1, 4, 20);
     font-family: "Montserrat", sans-serif;
-    height: 3000px;
+    height: 100vh;
     padding-top: 120px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .main {

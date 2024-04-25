@@ -14,7 +14,7 @@ class MyHeader extends HTMLElement {
                         <a href="about.html" class="nav_link">About</a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">Projects</a>
+                        <a href="projects.html" class="nav_link">Projects</a>
                     </li>
                     <li class="nav_item">
                         <a href="" class="nav_link">Contact</a>
@@ -38,13 +38,6 @@ class MyHeader extends HTMLElement {
     a {
         color: inherit;
         text-decoration: none;
-    }
-    
-    body {
-        background-color: rgb(0, 0, 0);
-        font-family: "Montserrat", sans-serif;
-        height: 3000px;
-        padding-top: 60px;
     }
     
     .header {
